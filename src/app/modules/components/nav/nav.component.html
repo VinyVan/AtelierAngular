@@ -1,0 +1,25 @@
+<nav class="nav">
+    <button mat-button routerLink="/home" routerLinkActive="nav-item-active" class="nav-item">
+        <mat-icon>home</mat-icon> 
+        <span>Home</span></button>
+    <button mat-button routerLink="/products" routerLinkActive="nav-item-active" class="nav-item" [mat-menu-trigger-for]="productsMenu">
+        <mat-icon>inventory</mat-icon>
+        <span>Products</span>
+    </button>
+    <mat-menu #productsMenu>
+        <button mat-menu-item routerLink="/products/list">
+            <mat-icon>list</mat-icon> 
+            <span>List products</span>
+        </button>
+        <button mat-menu-item  routerLink="/products/add">
+            <mat-icon>add</mat-icon>
+            <span>New product</span>
+        </button>
+        
+    </mat-menu>
+    <button mat-button routerLink="/contacts" routerLinkActive="nav-item-active" class="nav-item">
+        <mat-icon>contacts</mat-icon>
+        <span>Contact</span>
+    </button>
+
+</nav>

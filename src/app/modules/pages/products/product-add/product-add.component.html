@@ -1,0 +1,29 @@
+<app-common-presentation title="Add New Product"></app-common-presentation>
+<form class="form" #productItems="ngForm">
+    {{productItems.value | json}}
+    <mat-form-field class="form-element">
+        <mat-label>Id</mat-label>
+        <input matInput value="4" type="number" ngModel name="id" #id>
+    </mat-form-field>
+    <mat-form-field class="form-element">
+        <mat-label>Libelle</mat-label>
+        <input matInput ngModel name="libelle" #libelle>
+    </mat-form-field>
+    <mat-form-field class="form-element" float-label="always">
+        <mat-label>Price</mat-label>
+        <input matInput type="number" value="0" ngModel name="number" [ngStyle]="{'text-align':'right'}" #price>
+        <span matTextPrefix>$</span>
+        <span matTextSuffix>.00</span>
+    </mat-form-field>
+    <mat-form-field class="form-element">
+        <mat-label>Quantity</mat-label>
+        <input matInput type="number" value="0" ngModel name="quantity" #quantity>
+    </mat-form-field>
+    <!-- <mat-form-field class="form-element">
+        <mat-label>Check</mat-label>
+        <button mat-icon-button  ngModel name="isChecked" #isChecked></button>
+    </mat-form-field> -->
+    <button mat-raised-button color="primary" (click)="newProduct(id.value,libelle.value,price.value,quantity.value)">
+        Ajouter
+    </button>
+</form>

@@ -1,0 +1,15 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    gap:0.5rem;
+    .nav-item{
+        padding: 1rem;
+        border: 1px double greenyellow;
+    }
+
+    .nav-item-active{
+        background-color: greenyellow;
+        font-weight: bold;
+        transform: scale(1.1);
+    }
+}

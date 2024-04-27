@@ -1,0 +1,143 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "libelle": "stylo",
+      "price": 45,
+      "quantity": 23
+    },
+    {
+      "id": 2,
+      "libelle": "cahier",
+      "price": 40,
+      "quantity": 2
+    },
+    {
+      "id": 3,
+      "libelle": "livre",
+      "price": 87,
+      "quantity": 3
+    },
+    {
+      "id": 4,
+      "libelle": "gomme",
+      "price": 98,
+      "quantity": 14
+    },
+    {
+      "id": 5,
+      "libelle": "crayon",
+      "price": 8,
+      "quantity": 64
+    },
+    {
+      "id": 6,
+      "libelle": "feutre",
+      "price": 38,
+      "quantity": 4
+    },
+    {
+      "id": 7,
+      "libelle": "chiffon",
+      "price": 62,
+      "quantity": 6
+    },
+    {
+      "id": 8,
+      "libelle": "ardoise",
+      "price": 62,
+      "quantity": 98
+    },
+    {
+      "id": 5,
+      "libelle": "crayon",
+      "price": 8,
+      "quantity": 64
+    },
+    {
+      "id": 6,
+      "libelle": "feutre",
+      "price": 38,
+      "quantity": 4
+    },
+    {
+      "id": 7,
+      "libelle": "chiffon",
+      "price": 62,
+      "quantity": 6
+    },
+    {
+      "id": 8,
+      "libelle": "ardoise",
+      "price": 62,
+      "quantity": 98
+    },
+    {
+      "id": 5,
+      "libelle": "crayon",
+      "price": 8,
+      "quantity": 64
+    },
+    {
+      "id": 6,
+      "libelle": "feutre",
+      "price": 38,
+      "quantity": 4
+    },
+    {
+      "id": 7,
+      "libelle": "chiffon",
+      "price": 62,
+      "quantity": 6
+    },
+    {
+      "id": 8,
+      "libelle": "ardoise",
+      "price": 62,
+      "quantity": 98
+    },
+    {
+      "id": 75,
+      "libelle": "Crayons de couleurs",
+      "price": 180,
+      "quantity": 102
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "description": "c'est un test 1",
+      "productId": 1
+    },
+    {
+      "id": 2,
+      "description": "c'est un test 2",
+      "productId": 2
+    },
+    {
+      "id": 3,
+      "description": "c'est un test 3",
+      "productId": 2
+    },
+    {
+      "id": 4,
+      "description": "c'est un test 4",
+      "productId": 2
+    },
+    {
+      "id": 5,
+      "description": "c'est un test 5",
+      "productId": 2
+    },
+    {
+      "id": 6,
+      "description": "c'est un test 6",
+      "productId": 2
+    },
+    {
+      "id": 7,
+      "description": "c'est un test 7",
+      "productId": 2
+    }
+  ]
+}

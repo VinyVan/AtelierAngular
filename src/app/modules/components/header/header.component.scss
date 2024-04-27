@@ -1,0 +1,10 @@
+.header{
+    display: flex;
+    border: 3px solid cyan;
+    box-shadow: 2px 2px 3px;
+    gap:1rem;
+
+    .navi{
+        flex-grow: 1;
+    }
+}
