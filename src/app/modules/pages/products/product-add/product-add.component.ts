@@ -1,26 +1,30 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Route, RouterLink } from '@angular/router';
 import { delay } from 'rxjs';
 import { Product } from 'src/app/models/product';
+import { ProductService } from 'src/app/modules/services/product.service';
 
 @Component({
   selector: 'app-product-add',
   templateUrl: './product-add.component.html',
   styleUrls: ['./product-add.component.scss']
 })
-export class ProductAddComponent {
+export class ProductAddComponent implements OnInit{
 
 
-  /* ngOnInit(): void {
-    product=new Produc
-  } */
-  @Output()
-  addNewProductEvent:EventEmitter<Product>=new EventEmitter()
+  constructor(private productService:ProductService){}
 
-  newProduct(id:string,libelle:string,price:string,quantity:string){
-    console.log(id,"\n",libelle,"\n",price,"\n",quantity);
-   var product:Product=new Product(Number.parseInt(id),libelle,Number.parseFloat(price),Number.parseInt(quantity))
-   this.addNewProductEvent.emit(product);
-   
+  product!:Product;
+  ngOnInit(): void {
+    this.product=new Product(1,"",0,0);
   }
+
+  
+
+  onSubmit(){
+    this.productService.add(this.product).subscribe(
+      data=>{console.log("Ok",data)},
+      error=>{console.log("Erreur")}
+    )
+    }
 }

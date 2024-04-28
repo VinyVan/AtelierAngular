@@ -4,103 +4,127 @@
       "id": 1,
       "libelle": "stylo",
       "price": 45,
-      "quantity": 23
+      "quantity": 23,
+      "isChecked":false
     },
     {
       "id": 2,
       "libelle": "cahier",
       "price": 40,
-      "quantity": 2
+      "quantity": 2,
+      "isChecked":false
     },
     {
       "id": 3,
       "libelle": "livre",
       "price": 87,
-      "quantity": 3
+      "quantity": 3,
+      "isChecked":false
     },
     {
       "id": 4,
       "libelle": "gomme",
       "price": 98,
-      "quantity": 14
+      "quantity": 14,
+      "isChecked":false
     },
     {
       "id": 5,
       "libelle": "crayon",
       "price": 8,
-      "quantity": 64
+      "quantity": 64,
+      "isChecked":false
     },
     {
       "id": 6,
       "libelle": "feutre",
       "price": 38,
-      "quantity": 4
+      "quantity": 4,
+      "isChecked":false
     },
     {
       "id": 7,
       "libelle": "chiffon",
       "price": 62,
-      "quantity": 6
+      "quantity": 6,
+      "isChecked":false
     },
     {
       "id": 8,
       "libelle": "ardoise",
       "price": 62,
-      "quantity": 98
+      "quantity": 98,
+      "isChecked":false
     },
     {
       "id": 5,
       "libelle": "crayon",
       "price": 8,
-      "quantity": 64
+      "quantity": 64,
+      "isChecked":false
     },
     {
       "id": 6,
       "libelle": "feutre",
       "price": 38,
-      "quantity": 4
+      "quantity": 4,
+      "isChecked":false
     },
     {
       "id": 7,
       "libelle": "chiffon",
       "price": 62,
-      "quantity": 6
+      "quantity": 6,
+      "isChecked":false
     },
     {
       "id": 8,
       "libelle": "ardoise",
       "price": 62,
-      "quantity": 98
+      "quantity": 98,
+      "isChecked":false
     },
     {
       "id": 5,
       "libelle": "crayon",
       "price": 8,
-      "quantity": 64
+      "quantity": 64,
+      "isChecked":false
     },
     {
       "id": 6,
       "libelle": "feutre",
       "price": 38,
-      "quantity": 4
+      "quantity": 4,
+      "isChecked":false
     },
     {
       "id": 7,
       "libelle": "chiffon",
       "price": 62,
-      "quantity": 6
+      "quantity": 6,
+      "isChecked":false
     },
     {
       "id": 8,
       "libelle": "ardoise",
       "price": 62,
-      "quantity": 98
+      "quantity": 98,
+      "isChecked":false
     },
     {
       "id": 75,
       "libelle": "Crayons de couleurs",
       "price": 180,
-      "quantity": 102
+      "quantity": 102,
+      "isChecked":false
+    },
+    {
+      "quantity": 40,
+      "id": 104,
+      "libelle": "stylo",
+      "price": 450,
+      "isChecked":false
     }
   ],
   "reviews": [

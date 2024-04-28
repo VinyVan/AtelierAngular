@@ -12,6 +12,7 @@ import { MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
 import { CommonPresentationComponent } from '../components/presentations/common-presentation/common-presentation.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const materials=
@@ -39,13 +40,15 @@ const materials=
   declarations: [CommonPresentationComponent],
   imports: [
     CommonModule,
+    HttpClientModule,
     FormsModule,
     materials,
   ],
   exports:[
     materials,
+    HttpClientModule,
+    FormsModule,
     CommonPresentationComponent,
-    FormsModule
   ]
 })
 export class SharedModule { }
