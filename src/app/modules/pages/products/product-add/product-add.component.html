@@ -1,7 +1,7 @@
 <app-common-presentation title="Add New Product"></app-common-presentation>
 <form class="form" #productItems="ngForm" (ngSubmit)="onSubmit()" novalidate>
-    {{productItems.value | json}}
-    {{product | json}}
+    <!-- {{productItems.value | json}}
+    {{product | json}} -->
     <mat-form-field class="form-element">
         <mat-label>Id</mat-label>
         <input matInput value="4" type="number" [(ngModel)]="product.id" name="id" #id>
@@ -10,7 +10,7 @@
         <mat-label>Libelle</mat-label>
         <input matInput [(ngModel)]="product.libelle" name="libelle" #libelle="ngModel">
     </mat-form-field>
-    pristine : {{libelle.pristine}} touche:{{libelle.touched}}
+    <!-- pristine : {{libelle.pristine}} touche:{{libelle.touched}} -->
     <mat-form-field class="form-element" float-label="always">
         <mat-label>Price</mat-label>
         <input matInput type="number" value="0" [(ngModel)]="product.price" name="number" [ngStyle]="{'text-align':'right'}" #price>

@@ -12,7 +12,7 @@ import { ProductService } from 'src/app/modules/services/product.service';
   styleUrls: ['./products-list.component.scss']
 })
 export class ProductsListComponent implements AfterViewInit,OnInit{
-   dataSource!:MatTableDataSource<Product> /* new MatTableDataSource([
+   dataSource= new MatTableDataSource([
       {id:1,libelle:"stylo",price:45,quantity:23,isChecked:false},
       {id:2,libelle:"cahier",price:40,quantity:2,isChecked:false},
       {id:3,libelle:"livre",price:87,quantity:3,isChecked:false},
@@ -21,19 +21,19 @@ export class ProductsListComponent implements AfterViewInit,OnInit{
       {id:6,libelle:"feutre",price:38,quantity:4,isChecked:false},
       {id:7,libelle:"chiffon",price:62,quantity:6,isChecked:false},
       {id:8,libelle:"ardoise",price:62,quantity:6,isChecked:false},
-    ]) */
+    ])
     constructor(private productService:ProductService){
       
     }
     
     ngOnInit(): void {
-      this.productService.getAll().subscribe(
+      /* this.productService.getAll().subscribe(
         data=>{
           console.log(data);
           this.dataSource=new MatTableDataSource(data);
       }
       );
-      this.dataSource.sort=this.sort;
+      this.dataSource.sort=this.sort; */
     }
     displayedColumns: string[] = ['id', 'libelle', 'price', 'quantity','check','edit','delete'];
 
@@ -44,7 +44,8 @@ export class ProductsListComponent implements AfterViewInit,OnInit{
     paginator!:MatPaginator
     
     ngAfterViewInit(): void {     
-    /* this.dataSource.sort=this.sort; */
+    this.dataSource.sort=this.sort;
+    this.dataSource.paginator=this.paginator;
   }
 
   applyFilter(event:Event){

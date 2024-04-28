@@ -26,3 +26,6 @@
 ![Structure](captures/capture11.PNG)
 ![Structure](captures/capture12.PNG)
 ![Service](captures/capture13.PNG)
+![Service](captures/capture14.PNG)
+![Service](captures/capture15.PNG)
+![Service](captures/capture16.PNG)
